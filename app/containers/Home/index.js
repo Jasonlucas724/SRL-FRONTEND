@@ -131,7 +131,7 @@ export default class Home extends React.PureComponent {
            Sumo Robot League has made it easier for us to adapt and adopt by providing training,
            curriculum, materials, and support.</div>
 
-
+         dfw
          <div style={imageContainer}>
            <div style={image}></div>
 

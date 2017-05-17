@@ -28,10 +28,28 @@ export default function createRoutes() {
         },
       },
       {
-         path: '/TheArena',
-         name: 'TheArena',
+         path: '/TOURNAMENT',
+         name: 'TOURNAMENT',
          getComponent(nextState, comMod) {
-           import('containers/TheArena')
+           import('containers/TOURNAMENT')
+             .then(loadModule(comMod))
+             .catch(errorLoading);
+         },
+       },
+       {
+          path: '/SignIn',
+          name: 'SignIn',
+          getComponent(nextState, comMod) {
+            import('containers/SignIn')
+              .then(loadModule(comMod))
+              .catch(errorLoading);
+          },
+        },
+      {
+         path: '/SignUp',
+         name: 'SignUp',
+         getComponent(nextState, comMod) {
+           import('containers/SignUp')
              .then(loadModule(comMod))
              .catch(errorLoading);
          },

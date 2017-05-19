@@ -13,24 +13,15 @@ export default class SignIn extends React.PureComponent {
     constructor(props){
       super(props);
       this.state={
-        username:""
-        password:""
+        username:"",
+        password:"",
       }
     }
-    component WillMount(){
-      fetch("")
-      .then(funtion(res){
-        return res.json();
-      })
-      .then(function(json){
-        this.setState({
-          Products:json
-        })
-      }:bind(this))
-    }
+
     StoreProducts=() =>{
-      vardata = new FormData(;
-      data.append("key", this.state.data);
+      var data = new FormData();
+      data.append("username", this.state.username);
+      data.append("password", this.state.username);
 
       fetch("",{
         method:"post",

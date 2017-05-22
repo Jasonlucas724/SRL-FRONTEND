@@ -49,6 +49,19 @@ export default class About extends React.PureComponent {
       fontFamily:"Roboto, sans serif",
       marginTop:"150px",
     }
+    const main={
+      display:"flex",
+      flexDirection:"column",
+      marginTop:"100px",
+      alignItems:"center"
+
+    }
+    const banner={
+      width:"400px",
+      height:"500px",
+      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/t/570bbec4d51cd42a2811fd08/1460387529539/)",
+      backgroundSize:"cover"
+    }
     return (
       <div>
         <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
@@ -64,6 +77,15 @@ export default class About extends React.PureComponent {
               <Link to="/PRODUCTS" style={navLink}>PRODUCTS</Link>
           </header>
           </div>
+
+          <main>
+            <div style={main}>
+              <div style={banner}></div>
+          </div>
+
+
+            </main>
+
       </div>
     );
   }

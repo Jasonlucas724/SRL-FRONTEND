@@ -48,7 +48,7 @@ export default class Products extends React.PureComponent {
       fontFamily:"Roboto, sans serif",
       marginTop:"150px",
     }
-    const boxes={
+    const section1={
       display:"flex",
       flexDirection:"row",
       justifyContent:"space-around",
@@ -97,18 +97,39 @@ export default class Products extends React.PureComponent {
       backgroundSize:"cover"
     }
 
+    const section2={
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"space-around",
+      alignItems:"center"
+
+    }
     const boxFour={
-      width:"200px",
-      height:"200px",
+      width:"400px",
+      height:"350px",
       background:"#000000",
-      marginTop:"100px"
+      marginTop:"150px",
+      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/5627d938e4b0913312611611/1445452095410/LCPWSSumoRobot-5.jpg?format=500w)",
+      backgroundSize:"cover"
     }
     const boxFive={
-      width:"200px",
-      height:"200px",
+      width:"400px",
+      height:"350px",
       background:"#000000",
-      marginTop:"100px"
+      marginTop:"150px",
+      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56f55e9c7c65e43ded13e454/1458921152639/2016+Sumo++Spring+Poster_olv2.jpg?format=500w)",
+
     }
+    const boxSix={
+      width:"400px",
+      height:"350px",
+      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56f56116e321402dcfe312d6/1458921753820/Screen+Shot+2016-03-25+at+11.57.30+AM.png?format=500w)",
+      marginTop:"150px",
+      backgroundSize:"cover"
+
+    }
+
+
     return (
       <div>
         <Helmet title="Products" meta={[ { name: 'description', content: 'Description of Products' }]}/>
@@ -117,8 +138,8 @@ export default class Products extends React.PureComponent {
           <header style={navBar}>
             <div style={columnTwo}></div>
             <div style={logo}></div>
-              <Link to="/TOURNAMENT" style={navLink}>TOURNAMENT</Link>
-              <Link to="/HOME" style={navLink}>HOME</Link>
+              <Link to="/Home" style={navLink}>HOME</Link>
+              <Link to="/Tournament" style={navLink}>TOURNAMENT</Link>
               <Link to="/ABOUT" style={navLink}>ABOUT</Link>
               <Link to="/THE ARENA" style={navLink}>THE ARENA</Link>
               <Link to="/PRODUCTS" style={navLink}>PRODUCTS</Link>
@@ -126,19 +147,37 @@ export default class Products extends React.PureComponent {
           </div>
 
           <div>
-          <main style={boxes}>
+          <main>
+          <div style={section1}>
             <div style={boxOne}></div>
             <div style={boxTwo}></div>
             <div style={boxThree}></div>
+          </div>
+          <div style={textField}>
+            <Link style={text}>Battle Buddy</Link>
+            <Link style={text}>Classroom Kit</Link>
+            <Link style={text}>Teacher Training and Support</Link>
+          </div>
+
+
+
+          <div style={section2}>
+            <div style={boxFour}></div>
+            <div style={boxFive}></div>
+            <div style={boxSix}></div>
+          </div>
+
+
+          <div style={textField}>
+            <Link style={text}>Club Kit</Link>
+            <Link style={text}>Competition Poster</Link>
+            <Link style={text}>Textbook</Link>
+          </div>
+
+
 
           </main>
         </div>
-            <div>
-            <div style={textField}>
-              <Link style={text}>Battle Buddy</Link>
-              <Link style={text}>Classroom Kit</Link>
-              <Link style={text}>Teacher Training and Support</Link>
-            </div>
 
 
             </div>
@@ -147,7 +186,7 @@ export default class Products extends React.PureComponent {
 
 
 
-      </div>
+
 
     );
   }

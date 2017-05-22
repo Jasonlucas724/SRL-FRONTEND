@@ -28,10 +28,10 @@ export default function createRoutes() {
         },
       },
       {
-         path: '/TOURNAMENT',
-         name: 'TOURNAMENT',
+         path: '/TheArena',
+         name: 'TheArena',
          getComponent(nextState, comMod) {
-           import('containers/TOURNAMENT')
+           import('containers/TheArena')
              .then(loadModule(comMod))
              .catch(errorLoading);
          },

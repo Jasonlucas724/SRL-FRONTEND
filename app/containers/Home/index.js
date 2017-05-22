@@ -92,20 +92,10 @@ export default class Home extends React.PureComponent {
        backgroundSize:"cover",
        justifyContent:"space-between",
        alignSelf:"center",
-
-
-
-
-
-
-
-
-
       }
       const footerContainer={
         display:"flex",
         flexDirection:"column",
-
 
       }
       const textField={
@@ -149,10 +139,6 @@ export default class Home extends React.PureComponent {
       background:"black",
       fontFamily:"Roboto",
       textAlign:"center"
-
-
-
-
       }
 
       const textArea={
@@ -161,11 +147,7 @@ export default class Home extends React.PureComponent {
       justifyContent:"space-between",
       border:"2px solid black",
       color:"black",
-
-
       }
-
-
 
     return (
       <div>

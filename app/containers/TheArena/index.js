@@ -13,6 +13,7 @@ import Footer from 'components/Footer';
 import Products from 'containers/Products';
 import TextField from 'material-ui/TextField';
 import Menu from 'material-ui/svg-icons/navigation/Menu';
+import FlatButton from 'material-ui/FlatButton';
 
 
 export default class TheArena extends React.PureComponent {
@@ -114,6 +115,15 @@ export default class TheArena extends React.PureComponent {
       background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/t/57b4bbd7ebbd1a29c1223dc1/1471462416323/Screen+Shot+2016-08-17+at+3.31.44+PM.png?format=1000w)",
       marginTop:"50px"
     }
+    const button={
+      dipslay:"flex",
+      flexDirection:"row",
+      width:"100px",
+      height:"50px",
+      marginLeft:"50px",
+      marginBottom:"500px"
+
+    }
 
 
     return (
@@ -146,7 +156,16 @@ export default class TheArena extends React.PureComponent {
                 <div style={imageThree}>
               </div>
 
+              <div>
+              <FlatButton style={button} label="Register" />
+              </div>
+              <div>
+
+
+
+              </div>
             </div>
+
 
             </div>
 

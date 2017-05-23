@@ -10,7 +10,7 @@ export default function createRoutes() {
 
   return [
     {
-       path: '/Home',
+       path: '/',
        name: 'home',
        getComponent(nextState, comMod) {
          import('containers/Home')

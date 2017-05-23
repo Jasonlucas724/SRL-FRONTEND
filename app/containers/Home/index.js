@@ -12,7 +12,7 @@ import Main from 'components/Main';
 import Footer from 'components/Footer';
 import Products from 'containers/Products';
 import TextField from 'material-ui/TextField';
-import Menu from 'material-ui/svg-icons/navigation/Menu';
+import Menu from 'material-ui/Menu';
 
 
 
@@ -160,7 +160,7 @@ export default class Home extends React.PureComponent {
           <Link to="/TOURNAMENT" style={navLink}>TOURNAMENT</Link>
           <Link to="/HOME" style={navLink}>HOME</Link>
           <Link to="/ABOUT" style={navLink}>ABOUT</Link>
-          <Link to="/THE ARENA" style={navLink}>THE ARENA</Link>
+          <Link to="/THEARENA" style={navLink}>THE ARENA</Link>
           <Link to="/PRODUCTS" style={navLink}>PRODUCTS</Link>
       </header>
       </div>

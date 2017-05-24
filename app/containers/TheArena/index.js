@@ -16,6 +16,7 @@ import Menu from 'material-ui/svg-icons/navigation/Menu';
 import FlatButton from 'material-ui/FlatButton';
 
 
+
 export default class TheArena extends React.PureComponent {
   render() {
     const navBar={
@@ -140,7 +141,7 @@ export default class TheArena extends React.PureComponent {
               <Link to="/TOURNAMENT" style={navLink}>TOURNAMENT</Link>
               <Link to="/HOME" style={navLink}>HOME</Link>
               <Link to="/ABOUT" style={navLink}>ABOUT</Link>
-              <Link to="/THE ARENA" style={navLink}>THE ARENA</Link>
+              <Link to="/THEARENA" style={navLink}>THE ARENA</Link>
               <Link to="/PRODUCTS" style={navLink}>PRODUCTS</Link>
           </header>
           </div>
@@ -160,6 +161,7 @@ export default class TheArena extends React.PureComponent {
               <FlatButton style={button} label="Register" />
               </div>
               <div>
+
 
 
 

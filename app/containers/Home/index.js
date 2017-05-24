@@ -79,7 +79,8 @@ export default class Home extends React.PureComponent {
         display:"flex",
         flexDirection:"column",
         justifyContent:"center",
-        marginTop:"50px"
+        marginTop:"50px",
+        alignSelf:"center"
 
 
 
@@ -154,6 +155,7 @@ export default class Home extends React.PureComponent {
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
 
       <div>
+
       <header style={navBar}>
         <div style={columnTwo}></div>
         <div style={logo}></div>

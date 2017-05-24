@@ -94,7 +94,7 @@ export default class Tournament extends React.PureComponent {
               <Link to="/TOURNAMENT" style={navLink}>TOURNAMENT</Link>
               <Link to="/HOME" style={navLink}>HOME</Link>
               <Link to="/ABOUT" style={navLink}>ABOUT</Link>
-              <Link to="/THE ARENA" style={navLink}>THE ARENA</Link>
+              <Link to="/THEARENA" style={navLink}>THE ARENA</Link>
               <Link to="/PRODUCTS" style={navLink}>PRODUCTS</Link>
           </header>
           </div>

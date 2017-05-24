@@ -28,6 +28,15 @@ export default function createRoutes() {
         },
       },
       {
+         path: '/Home',
+         name: 'Home',
+         getComponent(nextState, comMod) {
+           import('containers/Home')
+             .then(loadModule(comMod))
+             .catch(errorLoading);
+         },
+       },
+      {
          path: '/TheArena',
          name: 'TheArena',
          getComponent(nextState, comMod) {
@@ -72,6 +81,15 @@ export default function createRoutes() {
                .catch(errorLoading);
            },
          },
+         {
+            path: '/Dashboard',
+            name: 'Dashboard',
+            getComponent(nextState, comMod) {
+              import('containers/Dashboard')
+                .then(loadModule(comMod))
+                .catch(errorLoading);
+            },
+          },
         {
           path: '/GetCategories',
           name: 'GetCategories',

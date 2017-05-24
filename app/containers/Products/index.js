@@ -52,22 +52,33 @@ export default class Products extends React.PureComponent {
       display:"flex",
       flexDirection:"row",
       justifyContent:"space-around",
+      flexWrap:"wrap",
       alignItems:"center"
 
-    }
-    const boxOne={
-      width:"400px",
-      height:"350px",
-      background:"url(https://pbs.twimg.com/media/CaDknK_UkAEG-H-.jpg)",
-      marginTop:"100px",
-      backgroundSize:"cover"
 
+
+
+    }
+    const box={
+      width:"350px",
+      height:"350px",
+      justifyContent:"center",
+      marginTop:"100px",
+      backgroundSize:"cover",
+      color:"#fffffff",
+      alignItems:"center",
+
+    }
+    const image = {
+      width:"350px",
+      height:'auto'
     }
     const textField={
      display:"flex",
      justifyContent:"space-around",
      flexDirection:"row",
-     alignItems:"center"
+     alignItems:"center",
+     color:"white"
 
     }
     const text={
@@ -76,58 +87,15 @@ export default class Products extends React.PureComponent {
      fontFamily:"Roboto,sans serif",
      color:"#000000",
 
-
-    }
-    const boxTwo={
-      width:"400px",
-      height:"350px",
-      marginTop:"100px",
-      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/5627da63e4b04589290475a6/1445452393695/LCPWSSumoRobot-41.jpg?format=500w)",
-
     }
 
-
-
-
-    const boxThree={
-      width:"400px",
-      height:"350px",
-      marginTop:"100px",
-      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56cc7275e707ebc39cf29e30/1456239228975/LCPWSSumoRobot-83.jpg?format=300w)",
-      backgroundSize:"cover"
-    }
-
-    const section2={
+    const footerContainer={
       display:"flex",
       flexDirection:"row",
-      justifyContent:"space-around",
-      alignItems:"center"
+
 
     }
-    const boxFour={
-      width:"400px",
-      height:"350px",
-      background:"#000000",
-      marginTop:"150px",
-      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/5627d938e4b0913312611611/1445452095410/LCPWSSumoRobot-5.jpg?format=500w)",
-      backgroundSize:"cover"
-    }
-    const boxFive={
-      width:"400px",
-      height:"350px",
-      background:"#000000",
-      marginTop:"150px",
-      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56f55e9c7c65e43ded13e454/1458921152639/2016+Sumo++Spring+Poster_olv2.jpg?format=500w)",
 
-    }
-    const boxSix={
-      width:"400px",
-      height:"350px",
-      background:"url(https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56f56116e321402dcfe312d6/1458921753820/Screen+Shot+2016-03-25+at+11.57.30+AM.png?format=500w)",
-      marginTop:"150px",
-      backgroundSize:"cover"
-
-    }
 
 
     return (
@@ -141,46 +109,76 @@ export default class Products extends React.PureComponent {
               <Link to="/Home" style={navLink}>HOME</Link>
               <Link to="/Tournament" style={navLink}>TOURNAMENT</Link>
               <Link to="/ABOUT" style={navLink}>ABOUT</Link>
-              <Link to="/THE ARENA" style={navLink}>THE ARENA</Link>
+              <Link to="/THEARENA" style={navLink}>THE ARENA</Link>
               <Link to="/PRODUCTS" style={navLink}>PRODUCTS</Link>
           </header>
           </div>
 
-          <div>
+
           <main>
           <div style={section1}>
-            <div style={boxOne}></div>
-            <div style={boxTwo}></div>
-            <div style={boxThree}></div>
+            <div style={box}>
+              <img style={image} src="https://pbs.twimg.com/media/CaDknK_UkAEG-H-.jpg"/>
+              <div style={textField}>
+                <Link style={text}>Battle Buddy</Link>
+              </div>
+            </div>
+
+            <div style={box}>
+              <img style={image} src="https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56f55e9c7c65e43ded13e454/1458921152639/2016+Sumo++Spring+Poster_olv2.jpg?format=500w"/>
+              <div style={textField}>
+                <Link style={text}>Competition Ring Poster</Link>
+              </div>
+            </div>
+
+
+            <div style={box}>
+              <img style={image} src="https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56f56116e321402dcfe312d6/1458921753820/Screen+Shot+2016-03-25+at+11.57.30+AM.png?format=500w"/>
+              <div style={textField}>
+                <Link style={text}>Textbook</Link>
+              </div>
+            </div>
+
+            <div style={box}>
+              <img style={image} src="https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/56cc7275e707ebc39cf29e30/1456239228975/LCPWSSumoRobot-83.jpg?format=300w"/>
+              <div style={textField}>
+                <Link style={text}>Teaching</Link>
+              </div>
+            </div>
+
+            <div style={box}>
+              <img style={image} src="https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/5627d938e4b0913312611611/1445452095410/LCPWSSumoRobot-5.jpg?format=500w"/>
+              <div style={textField}>
+                <Link style={text}>Club Kit</Link>
+              </div>
+            </div>
+
+            <div style={box}>
+              <img style={image} src="https://static1.squarespace.com/static/55f05957e4b049cf1b1396b0/55f0874be4b0b791f20c7f3d/5627da63e4b04589290475a6/1445452393695/LCPWSSumoRobot-41.jpg?format=500w"/>
+              <div style={textField}>
+                <Link style={text}>Classroom kit</Link>
+              </div>
+            </div>
           </div>
-          <div style={textField}>
-            <Link style={text}>Battle Buddy</Link>
-            <Link style={text}>Classroom Kit</Link>
-            <Link style={text}>Teacher Training and Support</Link>
-          </div>
+
+        </main>
+
+
+          <footer style={footerContainer}>
+            <div style={textField}>© 2015, Jason Lucas. ALL RIGHTS RESERVED.</div>
 
 
 
-          <div style={section2}>
-            <div style={boxFour}></div>
-            <div style={boxFive}></div>
-            <div style={boxSix}></div>
-          </div>
 
-
-          <div style={textField}>
-            <Link style={text}>Club Kit</Link>
-            <Link style={text}>Competition Poster</Link>
-            <Link style={text}>Textbook</Link>
-          </div>
-
-
-
-          </main>
+          </footer>
         </div>
 
 
-            </div>
+
+
+
+
+
 
 
 
